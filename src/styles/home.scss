@@ -1,0 +1,66 @@
+@import 'colors';
+
+.home {
+    height: 100vh;
+    overflow-x: hidden;
+
+    div {
+        padding: 15rem 0 0 8rem;
+
+        >h1 {
+            color: white;
+            font-size: 4rem;
+            text-transform: uppercase;
+        }
+
+        >p {
+            color: white;
+            font-size: 1.2rem;
+        }
+    }
+
+    a {
+        display: block;
+        margin: 2rem 8rem;
+        width: 10rem;
+        background-color: $light_yellow;
+        color: $grey;
+        text-align: center;
+        border: none;
+        font-size: 1rem;
+        font-weight: 500;
+        border-radius: 10px;
+        padding: 1rem;
+        cursor: pointer;
+
+        &:hover {
+            font-weight: 600;
+            background-color: $dark_yellow;
+        }
+    }
+
+    &::before {
+        content: '';
+        height: 100%;
+        width: 100%;
+        background-image: url('../assets/main_bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 0%;
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home {
+        >div {
+            text-align: center;
+            padding: 10rem 0 0 0;
+        }
+
+        >a {
+            margin: 2rem auto;
+        }
+    }
+}
