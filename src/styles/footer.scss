@@ -8,6 +8,7 @@ footer {
     grid-template-columns: 2fr 1fr;
     color: white;
     align-items: center;
+    overflow: hidden;
 
     h2 {
         color: #e0c708;
@@ -50,5 +51,9 @@ footer {
     footer {
         grid-template-columns: 1fr;
         text-align: center;
+
+        >aside {
+            margin-top: 4rem;
+        }
     }
 }

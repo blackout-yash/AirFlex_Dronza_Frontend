@@ -51,3 +51,14 @@ nav {
         }
     }
 }
+
+@media screen and (max-width:374px) {
+    nav {
+        padding: 1rem 0.1rem;
+        padding-right: 0.2rem;
+
+        >div>a {
+            margin: 0 0.4rem;
+        }
+    }
+}
